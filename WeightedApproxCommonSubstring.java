@@ -111,8 +111,6 @@ public class WeightedApproxCommonSubstring {
 
     /**
      * Scenario 2: Wi proportional to English letter frequencies.
-     * You can use raw percentages or normalized values; only relative
-     * magnitudes matter for the DP.
      */
     public static double[] scenario2Weights() {
         double[] w = new double[26];
@@ -128,9 +126,7 @@ public class WeightedApproxCommonSubstring {
         return w;
     }
 
-    /**
-     * Example random string generator (uniform over A-Z).
-     */
+
     public static String randomString(int length, Random rng) {
         StringBuilder sb = new StringBuilder(length);
         for (int i = 0; i < length; i++) {
@@ -140,9 +136,6 @@ public class WeightedApproxCommonSubstring {
         return sb.toString();
     }
 
-    /**
-     * Example main to show usage.
-     */
     public static void main(String[] args) {
         // Example from the assignment
         String s1 = "ABCAABCAA";
